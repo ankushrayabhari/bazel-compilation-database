@@ -85,7 +85,7 @@ readonly BAZEL="${BAZEL_COMPDB_BAZEL_PATH:-bazel}"
 
 readonly WORKSPACE="$("$BAZEL" info workspace)"
 readonly EXEC_ROOT="$("$BAZEL" info execution_root)"
-readonly COMPDB_FILE="${WORKSPACE}/compile_commands.json"
+readonly COMPDB_FILE="${WORKSPACE}/.vscode/compile_commands.json"
 
 readonly QUERY_CMD=(
   "$BAZEL" query
